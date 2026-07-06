@@ -47,14 +47,7 @@ const links = [
     arrow: '↗',
     download: false,
   },
-  {
-    icon: 'ti-download',
-    name: 'Download CV',
-    sub: 'senior backend engineer · en',
-    href: '/cv-en.pdf',
-    arrow: '↓',
-    download: true,
-  },
+  
 ];
 
 function renderLinks() {
