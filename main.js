@@ -8,6 +8,14 @@ const links = [
     download: false,
   },
   {
+    icon: 'ti-terminal-2',
+    name: 'commandlinux.dev',
+    sub: 'devops & cloud native notes',
+    href: 'https://commandlinux.dev',
+    arrow: '↗',
+    download: false,
+  },
+  {
     icon: 'ti-brand-linkedin',
     name: 'LinkedIn',
     sub: 'cesar-augusto-dos-santos',
@@ -26,7 +34,7 @@ const links = [
   {
     icon: 'ti-brand-medium',
     name: 'Medium',
-    sub: '@csar.santos18',
+    sub: 'César Santos',
     href: 'https://medium.com/@csar.santos18',
     arrow: '↗',
     download: false,

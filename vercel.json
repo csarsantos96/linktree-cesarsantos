@@ -1,0 +1,10 @@
+{
+  "headers": [
+    {
+      "source": "/cv-en.pdf",
+      "headers": [
+        { "key": "X-Robots-Tag", "value": "noindex, nofollow" }
+      ]
+    }
+  ]
+}
