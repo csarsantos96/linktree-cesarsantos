@@ -32,14 +32,6 @@ const links = [
     download: false,
   },
   {
-    icon: 'ti-brand-medium',
-    name: 'Medium',
-    sub: 'César Santos',
-    href: 'https://medium.com/@csar.santos18',
-    arrow: '↗',
-    download: false,
-  },
-  {
     icon: 'ti-mail',
     name: 'Email',
     sub: 'hello@cesarsantos.dev',
