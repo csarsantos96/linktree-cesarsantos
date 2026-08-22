@@ -67,3 +67,32 @@ function renderLinks() {
 }
 
 renderLinks();
+
+function initThemeToggle() {
+  const root = document.documentElement;
+  const button = document.getElementById('theme-toggle');
+  const icon = button.querySelector('i');
+  const stored = localStorage.getItem('theme');
+
+  function effectiveTheme() {
+    const current = root.getAttribute('data-theme');
+    if (current) return current;
+    return window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+  }
+
+  function applyIcon(theme) {
+    icon.className = theme === 'light' ? 'ti ti-sun' : 'ti ti-moon';
+  }
+
+  if (stored) root.setAttribute('data-theme', stored);
+  applyIcon(effectiveTheme());
+
+  button.addEventListener('click', () => {
+    const next = effectiveTheme() === 'light' ? 'dark' : 'light';
+    root.setAttribute('data-theme', next);
+    localStorage.setItem('theme', next);
+    applyIcon(next);
+  });
+}
+
+initThemeToggle();
