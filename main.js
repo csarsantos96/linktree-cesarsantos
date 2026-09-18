@@ -32,6 +32,14 @@ const links = [
     download: false,
   },
   {
+    icon: 'ti-brand-instagram',
+    name: 'Instagram',
+    sub: '@csaaruto',
+    href: 'https://instagram.com/csaaruto',
+    arrow: '↗',
+    download: false,
+  },
+  {
     icon: 'ti-mail',
     name: 'Email',
     sub: 'hello@cesarsantos.dev',
